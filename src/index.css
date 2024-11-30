@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800 bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-emerald-600 text-white hover:bg-emerald-700;
+  }
+  
+  .input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+           focus:border-emerald-500 focus:ring-emerald-500;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold text-center mb-12;
+  }
+}
