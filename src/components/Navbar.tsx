@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/images/logo.svg';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            {/* <Sheep className="h-8 w-8 text-emerald-600" /> */}
+            <img src={logo} alt="TJ Dorpers Logo" className="h-8 w-8" />
             <span className="ml-2 text-xl font-semibold text-gray-900">TJ Dorpers</span>
           </div>
           
